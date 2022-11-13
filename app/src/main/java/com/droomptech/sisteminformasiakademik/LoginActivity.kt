@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
             val password = binding.edtPasswordLogin.text.toString()
 
             if (email.isEmpty()){
-                binding.edtEmailLogin.error = "Email harus diisi"
+                binding.edtEmailLogin.error = "Email harus Diisi"
                 binding.edtEmailLogin.requestFocus()
                 return@setOnClickListener
             }
@@ -44,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
             }
 
             if (password.isEmpty()){
-                binding.edtPasswordLogin.error = "Email harus diisi"
+                binding.edtPasswordLogin.error = "Email harus Diisi"
                 binding.edtPasswordLogin.requestFocus()
                 return@setOnClickListener
             }

@@ -32,19 +32,19 @@ class RegisterActivity : AppCompatActivity() {
             val password = binding.edtPasswordRegister.text.toString()
 
             if (email.isEmpty()){
-                binding.edtEmailRegister.error = "Email harus diisi"
+                binding.edtEmailRegister.error = "Email harus Diisi"
                 binding.edtEmailRegister.requestFocus()
                 return@setOnClickListener
             }
 
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                binding.edtEmailRegister.error = "Email tidak valid"
+                binding.edtEmailRegister.error = "Email tidak Dalid"
                 binding.edtEmailRegister.requestFocus()
                 return@setOnClickListener
             }
 
             if (password.isEmpty()){
-                binding.edtPasswordRegister.error = "Email harus diisi"
+                binding.edtPasswordRegister.error = "Email harus Diisi"
                 binding.edtPasswordRegister.requestFocus()
                 return@setOnClickListener
             }
